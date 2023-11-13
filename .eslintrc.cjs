@@ -7,15 +7,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   env: { browser: true, es2020: true },
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended-type-checked',
-    'plugin:@typescript-eslint/stylistic-type-checked',
-    'plugin:react-hooks/recommended',
-    'plugin:react/recommended',
-    'prettier',
-    'plugin:react/jsx-runtime'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended-type-checked', 'plugin:@typescript-eslint/stylistic-type-checked', 'plugin:react-hooks/recommended', 'plugin:react/recommended', 'prettier', 'plugin:react/jsx-runtime', 'plugin:storybook/recommended'],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'simple-import-sort', 'react'],
