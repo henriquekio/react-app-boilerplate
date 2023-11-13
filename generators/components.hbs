@@ -1,0 +1,9 @@
+{{#if type}}
+import { {{pascalCase name}}Props } from './types'
+{{/if}}
+
+const {{pascalCase name}} = ({{#if type}}{ ...props }:{{pascalCase name}}Props{{/if}}) => {
+  return <div>{/* your amazing component */}</div>
+}
+
+export default {{pascalCase name}}
