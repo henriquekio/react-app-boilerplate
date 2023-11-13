@@ -12,11 +12,13 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-type-checked',
     'plugin:@typescript-eslint/stylistic-type-checked',
     'plugin:react-hooks/recommended',
-      'plugin:react/recommended',
+    'plugin:react/recommended',
+    'prettier',
+    'plugin:react/jsx-runtime'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', "simple-import-sort"],
+  plugins: ['react-refresh', 'simple-import-sort', 'react'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
